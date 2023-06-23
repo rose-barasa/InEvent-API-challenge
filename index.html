@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>InEvent API Challenge</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+        <div class="container" id="login-container">
+            <h1>Login</h1>
+            <form id="login-form" action="" method="posts">
+            <input type="text" id="username" placeholder="Username" autofocus aria-autocomplete="true" required>
+            <input type="password" id="password" placeholder="Password" autofocus required>
+            <button type="submit">Login</button>
+            </form>
+        </div>
+        <div class="container hidden" id="table-container">
+        <h1>Welcome!</h1>
+        <p id="welcome-message"></p>
+        <div class="grid">
+            
+        </div>
+        </div>
+        <button id="dark-mode-toggle" class="dark-mode-toggle"><span></span></button><button id="logout-button">Logout</button>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

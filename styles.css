@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  main{
+    display: block;
+  }
+  .container {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+  }
+  
+  .container.dark-mode {
+    background-color: #222;
+    color: #fff;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    border-color: #a57fbb;
+  }
+  
+  button[type="submit"],
+  .dark-mode-toggle {
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    background-image: linear-gradient(to right, #FFD700, #000000);
+    color: white;
+    cursor: pointer;
+    transition: background-image 0.3s ease;
+  }
+  
+  .dark-mode-toggle {
+    margin-top: 10px;
+    background-image: linear-gradient(to right, #555555, #000000);
+  }
+  
+  .dark-mode-toggle.dark-mode {
+    background-image: linear-gradient(to right, #999999, #000000);
+  }
+  .dark-mode-toggle.dark-mode span::before {
+    content: "Light Mode";
+    display: block;
+  }
+  
+  .dark-mode-toggle span::before {
+    content: "Dark Mode";
+    display: block;
+  }
+  .container.hidden {
+    display: none;
+  }
+  #table-container{
+    width: 700px;
+  }
+  .grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1rem;
+  }
+  #logout-button{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    background-image: linear-gradient(to right, #FFD700, #000000);
+    color: white;
+    cursor: pointer;
+    transition: background-image 0.3s ease;
+    float: right;
+    display: none;
+  }
